@@ -2,7 +2,9 @@
 import hero from "../img/hero-bg.webp";
 import logo from "../img/radcars_logo@2x.png";
 import { Image } from "astro:assets";
-import meta_img from "../img/meta_img.jpg";
+import meta_img from "../img/meta_img_2.jpg";
+import facebook_icon from "../img/facebook_icon.png";
+import instagram_icon from "../img/instagram_icon.webp";
 
 export const heroBg = `url("${hero.src}")`;
 ---
@@ -80,16 +82,25 @@ export const heroBg = `url("${hero.src}")`;
         <h2 class="text-4xl text-center lg:text-left">Kontakt:</h2>
         <ul class="flex flex-col gap-2">
           <li class="text-xl text-center lg:text-left lg:indent-8">
-            Email: radap.immo@gmail.com
+            radap.immo@gmail.com
           </li>
           <li class="text-xl text-center lg:text-left lg:indent-8">
-            Rufnummer: +43676 6936677
+            +43676 6936677
           </li>
           <li class="text-xl text-center lg:text-left lg:indent-8">
-            Facebook: @radcars
+            <div
+              class="flex justify-center lg:justify-start items-center gap-2 w-full"
+            >
+              <Image src={facebook_icon} height={20} alt="Facebook logo" /> @radcars
+            </div>
           </li>
           <li class="text-xl text-center lg:text-left lg:indent-8">
-            Instagram: @radcars
+            <div
+              class="flex justify-center lg:justify-start items-center gap-2 w-full"
+            >
+              <Image src={instagram_icon} height={20} alt="Instagram logo" />
+              @radcars
+            </div>
           </li>
         </ul>
       </div>
